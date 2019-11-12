@@ -95,6 +95,7 @@ class ItemsList extends React.Component<ItemsListProps, State> {
 
   public handlePageChange = (page: any, filteredResults: any) => {
     if (page > 0 && page * 12 - 11 <= filteredResults.length) {
+      window.scrollTo(0, 0)
       history.push(`/page/${page}`);
     }
   };
