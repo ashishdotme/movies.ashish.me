@@ -50,7 +50,7 @@ class ItemsList extends React.Component<ItemsListProps, State> {
     super(props);
     this.state = {
       error: undefined,
-      sortOrder: "Ascending",
+      sortOrder: "Descending",
       sortList: [
         { key: "viewingDate", value: "Viewing Date" },
         { key: "imdbRating", value: "Rating" },
@@ -174,7 +174,7 @@ class ItemsList extends React.Component<ItemsListProps, State> {
     const pages = Math.ceil(filteredResults.length / 12);
     return (
       <>
-        <Hero title="My Movies" subTitle="🎬 movies I have watched in my lifetime">
+        <Hero title="Movies" subTitle="🎬 movies I have watched in my lifetime">
           <Filter
             classname={"m-t-xl"}
             numOfFilters={2}
