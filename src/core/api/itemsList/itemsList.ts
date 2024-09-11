@@ -4,7 +4,7 @@ import axios from "axios";
 const ItemsListApi = () =>
   axios
     .get(
-      `https://systemapi.prod.ashish.me/movies`
+      `https://app.ashish.me/api/movies/all.json`
     )
     .then(result => {
       return result.data;
